@@ -25,6 +25,7 @@ def select_sort(nums:list = [1, 1, 4, 5, 1, 4], nonincrese = False) -> list:
                 min = nums[j]
         nums[i], nums[flag] = nums[flag], nums[i]
     return nums
+
 select_sort()
 
 #hw1-3因式分解
