@@ -33,7 +33,10 @@ select_sort()
 
 #hw1-3因式分解
 def factorization(num = 60):
-    print(num, ' = ', end='')
+    print(num, '= ', end='')
+    if num == 1:
+        print(1)
+        return
     i = 2
     while i < num:
         if num % i:
