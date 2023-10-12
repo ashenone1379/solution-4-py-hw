@@ -14,7 +14,7 @@ narcissistic_number()
 
 
 #hw1-2选择法排序设计        
-def select_sort(nums:list = [1, 1, 4, 5, 1, 4], nonincrese = False) -> list:
+def select_sort(nums:list = [1, 1, 4, 5, 1, 4], nonincrease = False) -> list:
     length = len(nums)
     for i in range(length-1):
         min = nums[i]
@@ -24,6 +24,8 @@ def select_sort(nums:list = [1, 1, 4, 5, 1, 4], nonincrese = False) -> list:
                 flag = j
                 min = nums[j]
         nums[i], nums[flag] = nums[flag], nums[i]
+    if nonincrease:
+        nums.reverse()
     print(nums)
     return nums
 
