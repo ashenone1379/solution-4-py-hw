@@ -1,3 +1,5 @@
+#! /usr/bin/python
+
 #hw1-1输出水仙花数
 def narcissistic_number():
     print("The narcissistic numbers in [100, 1000) are:")
