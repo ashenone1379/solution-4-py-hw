@@ -38,6 +38,10 @@ def factorization(num = 60):
     print(num, '= ', end='')
     if num == 1:
         print(1)
+
+        
+        
+        
         return
     i = 2
     while i < num:
